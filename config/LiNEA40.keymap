@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -86,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E         &kp R         &kp T                                           &kp Y             &kp U  &kp I      &kp O      &kp P
-&kp A             &kp S   &kp D         &kp F         &kp G                                           &kp H             &kp J  &kp K      &kp L      &kp ENTER
-&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V         &kp B                                           &kp N             &kp M  &mkp LCLK  &mkp MCLK  &mkp RCLK
-&kp LCTRL         &trans  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &kp SPACE    &kp BACKSPACE  &lt 2 INT_HENKAN         &trans     &trans     &kp ESCAPE
+&kp Q             &kp W           &kp E         &kp R         &kp T                                           &kp Y             &kp U  &kp I      &kp O   &kp P
+&kp A             &kp S           &kp D         &kp F         &kp G                                           &kp H             &kp J  &kp K      &kp L   &kp ENTER
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V         &kp B                                           &kp N             &kp M  &mkp LCLK  &mo 3   &mkp RCLK
+&kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &kp SPACE    &kp BACKSPACE  &lt 2 INT_HENKAN         &mo 3      &trans  &kp ESCAPE
             >;
         };
 
@@ -97,10 +97,10 @@
 
         MARK {
             bindings = <
-&kp NUMBER_1  &kp N2    &kp N3        &kp N4        &kp N5                                 &kp N6        &kp N7         &kp N8         &kp N9    &kp N0
-&kp AT        &trans    &kp LS(LPAR)  &kp LS(RPAR)  &trans                                 &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(UNDER)  &kp SEMI  &kp COLON
-&kp LBKT      &kp RBKT  &kp LS(LT)    &kp LS(GT)    &kp LS(EQUAL)                          &kp MINUS     &kp LS(TILDE)  &kp COMMA      &kp DOT   &kp FSLH
-&kp LCTRL     &trans    &kp LGUI      &kp LALT      &trans         &kp SPACE    &kp SPACE  &kp DELETE                   &trans         &trans    &trans
+&kp NUMBER_1  &kp N2        &kp N3        &kp N4        &kp N5                                  &kp N6         &kp N7         &kp N8         &kp N9    &kp N0
+&kp LS(LBRC)  &kp LS(RBRC)  &kp LS(LPAR)  &kp LS(RPAR)  &kp AT                                  &kp LS(TILDE)  &kp LS(EXCL)   &kp LS(QMARK)  &kp SEMI  &kp COLON
+&kp LBKT      &kp RBKT      &kp LS(LT)    &kp LS(GT)    &kp LS(EQUAL)                           &kp MINUS      &kp LS(UNDER)  &kp COMMA      &kp DOT   &kp BSLH
+&kp LCTRL     &trans        &kp LGUI      &kp LALT      &trans         &kp SPACE    &kp DELETE  &trans                        &kp FSLH       &kp BSLH  &kp ESCAPE
             >;
         };
 
@@ -108,10 +108,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1     &kp F2                   &kp F3    &kp F4    &kp F5                          &kp F6    &kp F7    &kp F8    &kp F9  &kp F10
-&kp F11    &kp F12                  &kp F13   &kp F14   &none                           &none     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&kp TAB    &kp LANG_ZENKAKUHANKAKU  &trans    &trans    &trans                          &trans    &trans    &trans    &trans  &trans
-&kp LCTRL  &trans                   &kp LGUI  &kp LALT  &trans  &kp SPACE    &kp SPACE  &kp BSPC            &trans    &trans  &trans
+&kp F1     &kp F2                   &kp F3    &kp F4    &kp F5                              &kp F6  &kp F7    &kp F8    &kp F9  &kp F10
+&kp F11    &kp F12                  &kp F13   &kp F14   &trans                              &none   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&kp TAB    &kp LANG_ZENKAKUHANKAKU  &trans    &trans    &trans                              &trans  &trans    &trans    &trans  &trans
+&kp LCTRL  &trans                   &kp LGUI  &kp LALT  &trans  &kp SPACE    &kp BACKSPACE  &trans            &trans    &trans  &kp ESCAPE
             >;
         };
 
